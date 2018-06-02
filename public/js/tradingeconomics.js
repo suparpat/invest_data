@@ -72,7 +72,13 @@ $('#10y').click(() => {
 	update()
 })
 
-$('#alltime').click(() => {
+
+$('#50y').click(() => {
+	startDate = (today_year - 50) + today_month + today_date
+	update()
+})
+
+$('#150y').click(() => {
 	startDate = (today_year - 150) + today_month + today_date
 	update()
 })
