@@ -1,0 +1,74 @@
+doctype html
+html
+	head
+		title Invest Data
+	body
+		h1 Invest Data
+		p Learn 
+			a(target="_blank" href="https://www.khanacademy.org/economics-finance-domain/core-finance") Finance @ Khan Academy
+		button(id='1d') 1d
+		button(id='1w') 1w
+		button(id='1m') 1m
+		button(id='1y') 1y
+		button(id='5y') 5y
+		button(id='10y') 10y
+		button(id='alltime') all time
+		table(width="100%")
+			tr
+				td(width="50%")
+					h2 DJIA
+					div(id="src_djia")
+				td(width="50%")
+					h2 FED Rate
+					div(id="src_fed_rate")
+			tr
+				td(width="50%")
+					h2 TED Spread
+					p Difference between three-month Treasury Bill and three-month LIBOR based on US dollars. I.e. difference between interest rate on short term US govt debt and interest rate on interbank loans. 
+					p TED: Treasury-EuroDollar rate. Indicator of credit risk. By comparing the risk-free rate to any other interest rate, an analyst can determine the perceived difference in risk.
+					div(id="src_ted_spread")
+				td(width="50%")
+					h2 US Govt Bond 10Y
+					p Bond sold at aunction by US Govt. Signals investor confidence (high confidence, low price)
+					div(id="src_us_10y_bond")
+			tr
+				td
+					h2 VIX
+					div(id="src_vix")
+				td
+					h2 Inflation
+					div(id="src_inflation")
+
+		h2 Thailand
+		table
+			tr
+				td(width="50%")
+					h3 SET50
+					div(id="src_set50")
+				td(width="50%")
+					h3 GDP Growth Rate
+					div(id="src_th_gdp_growth_rate")
+			tr
+				td(width="50%")
+					h3 USDTHB
+					div(id="src_usdthb")
+				td(width="50%")
+					h3 Foreign Direct Investment
+					div(id="src_th_fdi")
+			tr
+				td(width="50%")
+					h3 Tourist Arrivals
+					div(id="src_th_tourists")
+				td(width="50%")
+					h3 Balance of trade
+					div(id="src_th_trade_balance")
+			tr
+				td(width="50%")
+					h3 Interest Rate
+					div(id="src_th_interest_rate")
+				td(width="50%")
+					h3 Govt Bond 10Y
+					div(id="src_th_10y_bond")
+		script(type="text/javascript" src="js/jquery-3.2.1.min.js")
+		script(type="text/javascript" src="js/tradingeconomics.js")
+
