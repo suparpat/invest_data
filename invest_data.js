@@ -20,8 +20,8 @@ app.get('/', (req, res) => {
 	res.render('tradingeconomics', {})
 })
 
-app.listen('3000', (err) => {
-	console.log('Invest Data listening on port 3000')
+app.listen('3010', (err) => {
+	console.log('Invest Data listening on port 3010')
 })	
 
 app.use(function (err, req, res, next) {
