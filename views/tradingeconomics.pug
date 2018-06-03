@@ -6,8 +6,9 @@ html
 		title Invest Data
 	body
 		h1 Invest Data
-		p Learn 
+		p Links 
 			a(target="_blank" href="https://www.khanacademy.org/economics-finance-domain/core-finance") Finance @ Khan Academy
+			a(target="_blank" href="https://russellinvestments.com/us/resources/financial-professionals/economic-indicators-dashboard") Economic Indicator Dashboard | Russell Investments
 		button(id='1d') 1d
 		button(id='1w') 1w
 		button(id='1m') 1m
@@ -16,6 +17,10 @@ html
 		button(id='10y') 10y
 		button(id='50y') 50y
 		button(id='150y') 150y
+		div
+			h2 Yield Curve
+			p In normal times, the yield curve slopes upward, reflecting a belief in future economic expansion. When short term interest rates exceed long term rates, market sentiment suggests that the long-term outlook is worse.
+			a(href="http://stockcharts.com/freecharts/yieldcurve.php") link
 		table(width="100%")
 			tr
 				td(width="50%")
@@ -72,6 +77,6 @@ html
 				td(width="50%")
 					h3 Govt Bond 10Y
 					div(id="src_th_10y_bond")
-		script(type="text/javascript" src="js/jquery-3.2.1.min.js")
+		script(type="text/javascript" src="js/jquery-3.3.1.js")
 		script(type="text/javascript" src="js/tradingeconomics.js")
 

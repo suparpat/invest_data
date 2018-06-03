@@ -84,16 +84,25 @@ $('#150y').click(() => {
 })
 
 function update(){
-	var elems = $('div[id^="src_"')
-	console.log(elems)
-	elems.each(function(index) {
-		var id = $(this).attr('id')
+	var dateRE = /^src_/;
+	var elems = [];
+	var els = document.getElementsByTagName('div');
+	for (var i = els.length; i--;){
+		if (dateRE.test(els[i].id)){
+			elems.push(els[i]);
+		}
+	}
+	// Getting error on safari browser
+	// var elems = $("div[id^='src_'")
+
+	elems.forEach(function(e) {
+		var id = $(e).attr('id')
 		id = id.replace('src_', '')
 		var src = sources[id]
 		src = src + "&d1=" + startDate + "&d2=" + today
 		console.log(id)
 		console.log(src)
-		$(this).empty()
-		$(this).append("<iframe src='" + src + "' height='300' width='600'  frameborder='0' scrolling='no'></iframe>")
+		$(e).empty()
+		$(e).append("<iframe src='" + src + "' height='300' width='600'  frameborder='0' scrolling='no'></iframe>")
 	})
 }
